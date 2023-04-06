@@ -59,13 +59,11 @@ export function caseScroll() {
 
       // Case Animation
       $('.section_portfolio').each(function (index) {
-        let triggerElement = $(this)
         let targetElement = $('.portfolio-itens_wrapper')
 
         let tl2 = gsap.timeline({
           scrollTrigger: {
             trigger: '.section_portfolio',
-            // trigger element - viewport
             start: 'top top',
             end: '+=100%',
             markers: true,
