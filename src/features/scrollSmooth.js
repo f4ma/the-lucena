@@ -1,12 +1,15 @@
 import Lenis from '@studio-freight/lenis'
 
 export function scrollSmoth() {
-  const lenis = new Lenis()
+  window.Webflow ||= []
+  window.Webflow.push(() => {
+    const lenis = new Lenis()
 
-  function raf(time) {
-    lenis.raf(time)
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
     requestAnimationFrame(raf)
-  }
-
-  requestAnimationFrame(raf)
+  })
 }

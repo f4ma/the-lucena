@@ -1,4 +1,12 @@
 
+.flickity-viewport {
+	width: 100%;
+  overflow: visible !important;
+}
+.flickity-button {
+	display: none;
+}
+
 
 .mf-cursor-text{
   font-weight:500;
@@ -16,66 +24,68 @@
     backdrop-filter: blur(10px); 
    }
 
-   .char {
-    display: inline-block;
-  }
-  
-  .word {
-    float: left;
-    height: 0.92em;
-    line-height: 0.92em;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    padding-right: 0.04em;
-  }
-  
-  .char {
-    pointer-events: none;
-    float: left;
-    padding-top: 0em;
-    line-height: 0.92em;
-  }
-  
-  .char:nth-of-type(odd) {
-    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  
-  .link-projeto .nome-cliente .char:before {
-    pointer-events: none;
-    display: block;
-    content: attr(data-char); /* Setting this attribute using custom JS */
-    position: absolute;
-    transform: translateY(-1em);
-    transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  
-  .link-projeto .nome-cliente .char:after {
-    pointer-events: none;
-    display: block;
-    content: attr(data-char); /* Setting this attribute using custom JS */
-    position: absolute;
-    transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  
-  .char:nth-of-type(odd) {
-    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  
-  .nome-cliente:hover .char:nth-of-type(odd) {
-    transform: translate3d(0, 1em, 0);
-    opacity: 1;
-  }
-  
-  .nome-cliente:hover .char:nth-of-type(2n) {
-    transform: translate3d(0, -0.92em, 0);
-    opacity: 1;
-  }
-  .char:nth-of-type(2n) {
-    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-  }
+ /* Words Styling */
+
+.char {
+  display: inline-block;
+}
+
+.word {
+  float: left;
+  height: 0.92em;
+  line-height: 0.92em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding-right: 0.04em;
+}
+
+.char {
+  pointer-events: none;
+  float: left;
+  padding-top: 0em;
+  line-height: 0.92em;
+}
+
+.char:nth-of-type(odd) {
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-projeto .nome-cliente .char:before {
+  pointer-events: none;
+  display: block;
+  content: attr(data-char); /* Setting this attribute using custom JS */
+  position: absolute;
+  transform: translateY(-1em);
+  transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-projeto .nome-cliente .char:after {
+  pointer-events: none;
+  display: block;
+  content: attr(data-char); /* Setting this attribute using custom JS */
+  position: absolute;
+  transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.char:nth-of-type(odd) {
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nome-cliente:hover .char:nth-of-type(odd) {
+  transform: translate3d(0, 1em, 0);
+  opacity: 1;
+}
+
+.nome-cliente:hover .char:nth-of-type(2n) {
+  transform: translate3d(0, -0.92em, 0);
+  opacity: 1;
+}
+.char:nth-of-type(2n) {
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
   .proxy {
     position: absolute;

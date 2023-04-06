@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rimraf -rf dist",
-    "lint:fix": "eslint ./src --ext .js,.jsx --fix"
+    "lint": "eslint --ext .js,.ts . --fix"
   },
   "devDependencies": {
     "eslint": "^8.36.0",
@@ -26,7 +26,9 @@
     "@studio-freight/lenis": "^1.0.4",
     "dragdealer": "^0.10.0",
     "dragscroll": "^0.0.8",
+    "flickity": "^3.0.0",
     "gsap": "^3.11.5",
+    "macy": "^2.5.1",
     "mouse-follower": "^1.1.2",
     "npm-check-updates": "^16.8.0",
     "split-type": "^0.3.3"
