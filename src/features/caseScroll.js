@@ -27,7 +27,7 @@ export function caseScroll() {
           animation: scrollTween,
           trigger: scrollContainer,
           pin: true,
-          pinSpacing: true,
+          //  pinSpacing: true,
           scrub: 1,
           invalidateOnRefresh: true,
           end: () => '+=' + scrollContainer.offsetWidth,

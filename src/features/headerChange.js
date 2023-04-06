@@ -22,7 +22,7 @@ export function headerChange() {
       })
     })
 
-    $('.light-section').each(function (index) {
+    $('#light-section').each(function (index) {
       ScrollTrigger.create({
         trigger: $(this),
         start: 'top 10%',
