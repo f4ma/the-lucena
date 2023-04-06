@@ -1,4 +1,4 @@
-//import { accordionAnimation } from './features/accordionAnimation'
+import { accordionAnimation } from './features/accordionAnimation'
 import { blogPatch } from './features/blogPatch'
 import { caseScroll } from './features/caseScroll'
 import { headerChange } from './features/headerChange'
@@ -19,4 +19,4 @@ imageDrag()
 numerosAnimation()
 headerChange()
 marqueAnimation()
-//accordionAnimation()
+accordionAnimation()
